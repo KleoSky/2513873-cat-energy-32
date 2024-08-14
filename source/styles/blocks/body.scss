@@ -1,4 +1,8 @@
 .body {
+  font-family: var(--font-base, "Lato");
+  font-size: var(--fontsize-base, 14px);
+  line-height: var(--lineheight-base, 18px);
+  background-color: var(--bg-primary, #ffffff);
+  color: var(--color-base, #444444);
   min-height: 100%;
-  font-family: var(--color-base, #ffffff);
 }
