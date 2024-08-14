@@ -1,1 +1,14 @@
-/* Здесь будут стили для кнопок */
+.button {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 26px;
+}
+
+.button--accent {
+  background-color: var(--bg-accent, #68b738);
+}
+
+.promo__link {
+  text-decoration: var(--text-no-under, none);
+  color: var(--color-third, #fa8072);
+}
