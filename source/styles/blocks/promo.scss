@@ -1,21 +1,44 @@
-.promo {
-  min-width: 320px;
+.main__promo {
+  font-family: var(--font-second, inherit);
   position: relative;
   text-align: center;
   background-image: url("../../images/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-size: contain;
   box-shadow: inset 0 0 0 320px rgba(104, 183, 56, 0.85);
+  color: var(--color-third, #fa8072);
+  display: grid;
+  grid-template-columns: 20px 1fr 20px;
 }
 
 @media (min-width: 768px) and (max-width: 1439px) {
-  .promo {
+  .main__promo {
     background-color: var(--bg-primary, #ffffff);
     background-image: none;
     box-shadow: none;
+    color: var(--color-second, #fa8072);
   }
 }
 
-.promo__title,
-.promo__slogan {
-  color: var(--color-third, #fa8072);
+.promo__wrapper {
+  margin: 0 auto;
+  grid-column: 2 / 3;
 }
+
+.promo__title {
+  margin: 0;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.promo__slogan {
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.promo__link {
+  text-decoration: var(--text-no-under, none);
+}
+

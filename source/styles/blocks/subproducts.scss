@@ -1,1 +1,23 @@
-/* Здесь будут стили для блока с дополнительными продуктами */
+.subproducts__title {
+  font-family: var(--font-second, inherit);
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--color-second, #fa5072);
+}
+
+.subproducts__stock {
+  width: 100%;
+  background-image: url("../../images/stock-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  padding-top: 170px;
+  padding-bottom: 43px;
+  box-shadow: inset 0 0 0 320px rgba(104, 183, 56, 0.85);
+  color: var(--color-third, #000080);
+}
+
+.subproducts__stock--font {
+  font-size: 16px;
+  line-height: 1.25;
+}

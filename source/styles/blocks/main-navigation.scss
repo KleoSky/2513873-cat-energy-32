@@ -1,1 +1,26 @@
-/* Здесь будут стили для блока навигации */
+.main-navigation {
+  font-family: var(--font-second, inherit);
+}
+
+.main-navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.main-navigation__item {
+  margin-bottom: 46px;
+}
+
+.main-navigation__item:last-child {
+  margin-bottom: 24px;
+}
+
+.main-navigation__link {
+  font-size: 20px;
+  line-height: 1;
+  text-transform: var(--text-upper, uppercase);
+  text-decoration: var(--text-no-under, none);
+  color: var(--color-second, #fa8072);
+}

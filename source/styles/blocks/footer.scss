@@ -1,1 +1,14 @@
-/* Здесь будут стили для футера */
+.body__footer {
+  background-color: var(--bg-secondary, #f2f2f2);
+}
+
+.footer__social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__developer-logo {
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,1 +1,28 @@
-/* Здесь будут стили для карточки товара */
+.card__link {
+  font-family: var(--font-second, inherit);
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+  color: #222222;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.card__description {
+  font-size: 12px;
+  line-height: 1.33;
+}
+
+.card__subtitle {
+  font-family: var(--font-second, inherit);
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 400;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.card__description--subproducts {
+  font-size: 14px;
+  line-height: 1;
+}
