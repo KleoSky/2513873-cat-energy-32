@@ -1,1 +1,15 @@
-/* Здесь будут стили для блока подписки */
+.subscribe__title {
+  font-family: var(--font-second, inherit);
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--color-second, #fa8072);
+}
+
+.subscribe__description {
+  font-family: var(--font-second, inherit);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--color-second, #fa8072);
+}

@@ -16,10 +16,18 @@
 <body class="page-catalog__body body">
   <header class="body__header header">
     <a class="header__logo logo" href="index.html">
-      <img class="logo__image" src="#" width="70" height="59" alt="Логотип сайта КэтЭнерджи">
+      <picture>
+        <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="icons/logo-desctop.svg">
+        <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="icons/logo-tablet.svg">
+        <img class="logo__image" src="icons/logo-mobile.svg" width="33" height="38" alt="Логотип сайта КэтЭнерджи">
+      </picture>
     </a>
     <a class="header__logo-title logo logo--title" href="index.html">
-      <img class="logo__description" src="#" width="101" height="18" alt="Надпись Cat Energy">
+      <picture>
+        <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml" srcset="icons/logo-text-desctop.svg">
+        <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml" srcset="icons/logo-text-tablet.svg">
+        <img class="logo__description" src="icons/logo-text-mobile.svg" width="101" height="18" alt="Надпись Cat Energy">
+      </picture>
     </a>
     <nav class="header__main-navigation main-navigation">
       <ul class="main-navigation__list">

@@ -1,1 +1,9 @@
-/* Здесь будут стили для header */
+.header__wrapper {
+  margin: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .header__burger {
+    display: none;
+  }
+}
