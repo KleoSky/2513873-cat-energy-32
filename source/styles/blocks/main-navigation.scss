@@ -30,3 +30,17 @@
   text-decoration: none;
   color: var(--color-second, #fa8072);
 }
+
+@media (min-width: 768px) {
+  .main-navigation__link {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main-navigation__link {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}

@@ -1,3 +1,7 @@
+.more-products {
+  background-image: none;
+}
+
 .more-products__title {
   font-family: var(--font-second, inherit);
   font-size: 16px;
@@ -7,9 +11,23 @@
   text-transform: uppercase;
 }
 
+@media (min-width: 768px) {
+  .more-products__title {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
 .more-products__description {
   font-size: 12px;
   line-height: 1.33;
+}
+
+@media (min-width: 768px) {
+  .more-products__description {
+    font-size: 18px;
+    line-height: 1.13;
+  }
 }
 
 .more-products__link {

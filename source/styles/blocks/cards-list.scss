@@ -1,1 +1,5 @@
-/* Здесь будут стили для блока со списиском карточек товаров */
+@media (min-width: 768px) {
+  .cards-list__item {
+    background-image: linear-gradient(to bottom, #ffffff 25%, #f2f2f2 25%);
+  }
+}

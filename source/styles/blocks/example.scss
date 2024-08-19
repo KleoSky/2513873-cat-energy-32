@@ -6,6 +6,13 @@
   color: var(--color-second, #fa8072);
 }
 
+@media (min-width: 768px) {
+  .example__title {
+    font-size: 60px;
+    line-height: 1;
+  }
+}
+
 .example__expenses,
 .example__cost {
   font-family: var(--font-second, inherit);
@@ -13,4 +20,16 @@
   line-height: 1.43;
   text-transform: uppercase;
   color: var(--color-second, #fa8072);
+}
+
+@media (min-width: 768px) {
+  .example__expenses,
+  .example__cost {
+    font-size: 20px;
+    line-height: 1;
+  }
+}
+
+.example__wrapper {
+  grid-column: 2 / 3;
 }

@@ -1,13 +1,14 @@
-.details__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 .details__title {
   font-family: var(--font-second, inherit);
   font-size: 36px;
   line-height: 1.11;
   font-weight: 400;
   color: var(--color-second, #fa8072);
+}
+
+@media (min-width: 768px) {
+  .details__title {
+    font-size: 60px;
+    line-height: 1;
+  }
 }
