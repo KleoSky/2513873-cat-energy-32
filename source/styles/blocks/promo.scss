@@ -5,10 +5,11 @@
   background-color: #3b7d1d;
   background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 60%, rgba(255, 255, 255, 1) 40%), url("../../images/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: contain;
+  background-position: 50% 0;
+  background-size: contain, 320px 302px;
   color: var(--color-third, #fa8072);
   display: grid;
+  grid-template-columns: 20px 1fr 20px;
 }
 
 @media (min-width: 768px) and (max-width: 1439px) {
