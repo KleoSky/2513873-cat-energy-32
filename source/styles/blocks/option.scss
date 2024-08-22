@@ -8,3 +8,10 @@
   background-color: var(--bg-secondary, #444444);
   margin-bottom: 20px;
 }
+
+@media (min-width: 1440px) {
+  .option__list {
+    display: flex;
+    column-gap: 80px;
+  }
+}
