@@ -9,7 +9,7 @@
   background-size: contain, 320px 302px;
   color: var(--color-third, #fa8072);
   display: grid;
-  grid-template-columns: 20px 1fr 20px;
+  grid-template-columns: 1fr 280px 1fr;
 }
 
 @media (min-width: 768px) and (max-width: 1439px) {

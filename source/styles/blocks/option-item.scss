@@ -3,33 +3,86 @@
   padding: 34px 33px 18px 20px;
 }
 
-.option__item--slim {
-  position: relative;
-  background-image: url("../../icons/stack.svg#slim");
-  background-repeat: no-repeat;
-  background-size: 36px 50px;
-  background-position: 27px 21px;
+.option-item__description {
+  margin: 22px 0;
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 50px;
-    height: 50px;
-    background-color: var(--bg-accent, #000080);
-    border-radius: 50%;
-    inset: 0;
-    left: 20px;
-    top: 24px;
+@media (min-width: 768px) {
+  .option__item {
+    margin: 0 30px 30px;
+    padding: 77px 316px 53px 52px;
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    grid-template-rows: 60px 1fr 86px;
   }
 }
 
-.option__item--pro {
-  position: relative;
-  background-image: url("../../icons/stack.svg#pro");
-  background-repeat: no-repeat;
-  background-size: 67px 28px;
-  background-position: 13px 35px;
+@media (max-width: 767px) {
+  .option__item--slim {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 50px;
+      height: 50px;
+      background-color: var(--bg-accent, #000080);
+      border-radius: 50%;
+      inset: 0;
+      left: 20px;
+      top: 24px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 36px;
+      height: 50px;
+      inset: 0;
+      background-image: url("../../icons/stack.svg#slim");
+      background-repeat: no-repeat;
+      background-size: 36px 50px;
+      background-position: 50% 50%;
+      left: 27px;
+      top: 21px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .option__item--pro {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 50px;
+      height: 50px;
+      background-color: var(--bg-accent, #000080);
+      border-radius: 50%;
+      inset: 0;
+      left: 20px;
+      top: 24px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 67px;
+      height: 28px;
+      inset: 0;
+      background-image: url("../../icons/stack.svg#pro");
+      background-repeat: no-repeat;
+      background-size: 67px 28px;
+      background-position: 50% 50%;
+      left: 12px;
+      top: 35px;
+    }
+  }
 }
 
 .option-item__title,
@@ -43,18 +96,81 @@
   font-size: 24px;
   line-height: 1.54;
   font-weight: 400;
-  margin: 0 auto 30px 90px;
+  margin: 0 auto 30px 70px;
 }
 
 @media (min-width: 768px) {
   .option-item__title {
     font-size: 36px;
     line-height: 1;
+    margin: 0 auto 24px 0;
+    display: grid;
+    grid-template-columns: 393px 200px 63px;
   }
-}
 
-.option-item__description {
-  margin: 22px 0;
+  .option-item__title--slim {
+    &::before {
+      content: "";
+      display: block;
+      width: 200px;
+      height: 200px;
+      background-color: var(--bg-accent, #000080);
+      border-radius: 50%;
+      inset: 0;
+      grid-column: 2 /3;
+      grid-row: 1 / -1;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 140px;
+      height: 194px;
+      inset: 0;
+      background-image: url("../../icons/stack.svg#slim");
+      background-repeat: no-repeat;
+      background-size: 140px 194px;
+      background-position: 50% 50%;
+      grid-column: 2 /3;
+      grid-row: 1 / -1;
+      margin-left: 30px;
+      bottom: 17px;
+    }
+  }
+
+  .option-item__title--pro {
+    &::before {
+      content: "";
+      display: block;
+      width: 200px;
+      height: 200px;
+      background-color: var(--bg-accent, #000080);
+      border-radius: 50%;
+      inset: 0;
+      grid-column: 2 /3;
+      grid-row: 1 / -1;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 268px;
+      height: 112px;
+      inset: 0;
+      background-image: url("../../icons/stack.svg#pro");
+      background-repeat: no-repeat;
+      background-size: 268px 112px;
+      background-position: 50% 50%;
+      grid-column: 2 /3;
+      grid-row: 1 / -1;
+      bottom: 17px;
+    }
+  }
+
+  .option-item__description {
+    grid-column: 1 / 2;
+    margin: 0;
+  }
 }
 
 .option-item__link {
@@ -67,5 +183,7 @@
   .option-item__link {
     font-size: 20px;
     line-height: 1.5;
+    grid-column: 1 / 2;
+    align-self: self-end;
   }
 }
