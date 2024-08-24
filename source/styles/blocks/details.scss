@@ -8,6 +8,12 @@
   }
 }
 
+@media (min-width: 1440px) {
+  .details__wrapper {
+    margin: 0 110px;
+  }
+}
+
 .details__title {
   font-family: var(--font-second, inherit);
   font-size: 36px;
