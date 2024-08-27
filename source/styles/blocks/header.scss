@@ -1,19 +1,32 @@
 .header__wrapper {
-  margin: 13px 20px 14px;
+  margin: 13px auto 14px;
+  padding: 0 20px;
   display: flex;
   align-items: center;
 }
 
 @media (min-width: 768px) {
   .header__wrapper {
-    margin: 25px 30px 65px;
+    margin: 25px auto 38px;
+    padding: 0 30px;
     justify-content: space-between;
   }
 }
 
 @media (min-width: 1440px) {
   .header__wrapper {
-    margin: 55px 110px 29px;
+    margin: 55px auto 29px;
+    padding: 0 110px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__logo {
+    margin-right: 56px;
+  }
+
+  .header__logo-title {
+    margin-right: 65px;
   }
 }
 
@@ -26,6 +39,12 @@
 .header__logo-wrapper {
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 767px) {
+  .header__logo-wrapper {
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 768px) {
