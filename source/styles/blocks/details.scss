@@ -1,16 +1,19 @@
 .details__wrapper {
-  margin: 0 20px;
+  width: 280px;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
   .details__wrapper {
-    margin: 0 30px;
+    width: 709px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: 1440px) {
   .details__wrapper {
-    margin: 0 110px;
+    width: 1220px;
+    margin: 0 auto;
   }
 }
 

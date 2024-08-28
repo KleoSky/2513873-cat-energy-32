@@ -5,11 +5,8 @@
   text-transform: uppercase;
 }
 
-@media (min-width: 768px) {
-  .stats__title {
-    font-size: 14px;
-    line-height: 1;
-  }
+.stats dd {
+  margin: 0;
 }
 
 .stats__description {
@@ -21,6 +18,11 @@
 }
 
 @media (min-width: 768px) {
+  .stats__title {
+    font-size: 14px;
+    line-height: 1;
+  }
+
   .stats__description {
     font-size: 30px;
     line-height: 1.23;

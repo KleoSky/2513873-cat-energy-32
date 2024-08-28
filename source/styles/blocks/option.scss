@@ -13,11 +13,15 @@
 }
 
 .option__item {
+  width: 280px;
+  margin: 0 auto;
   background-color: var(--bg-secondary, #444444);
   margin-bottom: 20px;
   padding: 34px 33px 18px 20px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  box-sizing: border-box;
+  flex-shrink: 0;
 }
 
 @media (min-width: 768px) and (max-width: 1439px) {
