@@ -15,7 +15,7 @@
 
 @media (min-height: 768px) {
   .details-list {
-    counter-reset: list 0;
+    counter-reset: list;
   }
 }
 
@@ -43,6 +43,7 @@
   }
 
   .details-list__item {
+    counter-increment: list;
     min-width: 230px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -58,8 +59,7 @@
     }
 
     &::after {
-      counter-increment: list 1;
-      content: counter(list) "";
+      content: counter(list) " ";
       font-family: var(--font-base, inherit);
       font-size: 280px;
       line-height: 1;
