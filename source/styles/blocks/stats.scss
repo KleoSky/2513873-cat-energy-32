@@ -1,8 +1,14 @@
 .stats__title {
+  position: relative;
   font-size: 12px;
   line-height: 1;
   font-weight: 400;
   text-transform: uppercase;
+  order: 1;
+  width: 87px;
+  text-align: center;
+  margin-top: -8px;
+  background-color: var(--bg-tertiary, #000080);
 }
 
 .stats dd {
@@ -15,6 +21,23 @@
   line-height: 1;
   color: var(--color-second, #fa8072);
   text-transform: uppercase;
+  border: 1px solid #cdcdcd;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.stats__description--weight {
+  position: relative;
+  width: 124px;
+  padding: 14px 30px 17px;
+  box-sizing: border-box;
+}
+
+.stats__description--time {
+  position: relative;
+  width: 124px;
+  padding: 14px 20px 17px;
+  box-sizing: border-box;
 }
 
 @media (min-width: 768px) {
