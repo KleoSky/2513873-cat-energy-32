@@ -27,6 +27,25 @@
   color: var(--color-second, #fa8072);
 }
 
+.example__image-wrapper {
+  margin: 0 auto;
+  object-fit: cover;
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  justify-content: center;
+}
+
+.example__image-fat {
+  position: relative;
+  clip-path: inset(0 140px 0 0);
+}
+
+.example__image-thin {
+  position: relative;
+  clip-path: inset(0 0 0 140px);
+  right: 140px;
+}
+
 @media (min-width: 768px) {
   .example__title {
     font-size: 60px;
@@ -37,5 +56,19 @@
   .example__cost {
     font-size: 20px;
     line-height: 1;
+  }
+
+  .example__image-wrapper {
+    grid-template-columns: repeat(2, 280px);
+  }
+
+  .example__image-fat {
+    clip-path: inset(0 280px 0 0);
+  }
+
+  .example__image-thin {
+    position: relative;
+    clip-path: inset(0 0 0 280px);
+    right: 280px;
   }
 }
