@@ -36,6 +36,7 @@
     min-width: 709px;
     display: grid;
     grid-template-columns: 90px 1fr 208px;
+    grid-template-rows: repeat(4, min-content);
   }
 
   .promo__title {
@@ -72,10 +73,12 @@
 
 @media (min-width: 1440px) {
   .promo__wrapper {
+    margin-bottom: 82px;
     padding: 0 110px;
     position: relative;
     display: grid;
     grid-template-columns: 80px 1fr 163px 431px;
+    grid-template-rows: min-content min-content 94px 160px;
 
     &::before {
       content: "";
@@ -97,8 +100,9 @@
 
   .promo__title {
     text-align: left;
-    margin-top: 110px;
+    margin-top: 81px;
     z-index: 1;
+    grid-column: 2 / 3;
   }
 
   .promo__slogan {
@@ -114,7 +118,7 @@
     position: relative;
     margin: 0;
     z-index: 5;
-    bottom: 330px;
+    bottom: 290px;
     left: 367px;
     box-sizing: border-box;
     grid-column: 2 / 5;
@@ -123,5 +127,8 @@
   .promo__link {
     margin: 0;
     margin-top: 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

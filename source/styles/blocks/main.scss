@@ -10,11 +10,6 @@
   color: var(--color-third, #fa8072);
 }
 
-.main__option {
-  width: 280px;
-  margin: 0 auto;
-}
-
 .main__details {
   margin-bottom: 49px;
 }
@@ -49,7 +44,7 @@
 
   .main__example {
     grid-template-columns: 110px 1fr 110px;
-    background-image: linear-gradient(to bottom, #ffffff 20%, #eaeaea 20%);
+    background-image: linear-gradient(to bottom, #ffffff 23%, #eaeaea 23%);
   }
 
   .main__contacts {
