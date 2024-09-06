@@ -95,6 +95,11 @@
     padding: 0 7.63%;
   }
 
+  .subproducts__list-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .subproducts__title {
     font-size: 40px;
     margin: 0;
@@ -137,6 +142,13 @@
 @media (min-width: 1920px) {
   .subproducts__title {
     text-align: center;
+  }
+
+  .subproducts__list-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+    column-gap: 7%;
   }
 
   .subproducts__list {

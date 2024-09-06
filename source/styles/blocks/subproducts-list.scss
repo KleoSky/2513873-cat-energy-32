@@ -18,25 +18,11 @@
 }
 
 @media (min-width: 1440px) {
-  .subproducts-list__wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
-
   .subproducts-list__item {
     grid-column: 1/-1;
     display: grid;
     grid-template-columns: subgrid;
     margin: 0;
     padding: 15px 0 16px;
-  }
-}
-
-@media (min-width: 1920px) {
-  .subproducts-list__wrapper {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    justify-content: center;
-    column-gap: 7%;
   }
 }
