@@ -18,6 +18,10 @@
   background-color: var(--bg-tertiary, #eaeaea);
 }
 
+.main__contacts {
+  background-color: var(--bg-secondary, #000080);
+}
+
 @media (min-width: 768px) {
   .main__example {
     grid-template-columns: 30px 1fr 30px;
@@ -45,6 +49,10 @@
   .main__example {
     grid-template-columns: 110px 1fr 110px;
     background-image: linear-gradient(to bottom, #ffffff 23%, #eaeaea 23%);
+  }
+
+  .main__cards {
+    margin-bottom: 46px;
   }
 
   .main__contacts {
