@@ -1,6 +1,6 @@
 .promo__wrapper {
   margin: 0 auto;
-  padding: 27px 20px 0;
+  padding: 27px 6.25% 0;
   box-sizing: border-box;
 }
 
@@ -25,15 +25,14 @@
 
 .promo__link {
   display: block;
-  width: 280px;
+  width: 100%;
   text-decoration: none;
   margin: 0 auto 20px;
 }
 
 @media (min-width: 768px) {
   .promo__wrapper {
-    padding: 0 30px;
-    min-width: 709px;
+    padding: 0 3.91%;
     display: grid;
     grid-template-columns: 90px 1fr 208px;
     grid-template-rows: repeat(4, min-content);
@@ -60,12 +59,13 @@
     margin: 0;
     grid-column: 1 / -1;
     grid-row: 3 / 5;
-    margin-left: 35px;
   }
 
   .promo__link {
+    width: 244px;
     margin: 0;
     margin-top: 29px;
+    margin-right: -35px;
     grid-column: 2 / 3;
     grid-row: 3 / 4;
   }
@@ -84,13 +84,12 @@
       content: "";
       display: block;
       position: absolute;
-      width: 720px;
       height: 694px;
-      background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 50%), url("../../images/index-background-desktop@1x.jpg");
+      background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 50%), url("../../images/index-background-desktop@1x.jpg"), linear-gradient(to right, #535258 50%, #403f45 50%);
       background-repeat: no-repeat;
-      background-size: 720px 694px;
+      background-size: auto 694px;
       background-color: #3b7d1d;
-      background-position: 100% 0;
+      background-position: 5% 0;
       inset: 0;
       left: 720px;
       z-index: 0;

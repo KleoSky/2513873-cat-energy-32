@@ -31,11 +31,11 @@
             <img class="logo__description" src="images/logo-text-mobile.svg" width="101" height="18" alt="Надпись Cat Energy">
           </picture>
         </a>
-        <button class="header__burger button-burger button-burger--close" type="button">
+        <button class="header__burger button-burger button-burger--opened" type="button">
           <span class="visually-hidden">Открыть меню навигации</span>
         </button>
       </div>
-      <nav class="header__main-navigation main-navigation">
+      <nav class="header__main-navigation main-navigation main-navigation--closed">
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
             <a class="main-navigation__link-catalog" href="index.html">Главная</a>
@@ -340,16 +340,14 @@
         <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>
       <div class="contacts__map-wrapper">
-        <div class="contacts__image-wrapper">
-          <picture>
-            <source media="(min-width: 1440px)" width="1440" height="400" type="image/png" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
-            <img class="contacts__image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png" width="320" height="362" alt="Карта проезда к офису компании Кэт Энерджи">
-          </picture>
-        </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625719817!2d30.32047247737302!3d59.938719162093584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1725632349929!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Офис компании по адресу улица Большая конюшенная, дом 19/8, Санкт-Петербург">
-        </iframe>
+        <picture>
+          <source media="(min-width: 1440px)" width="1440" height="400" type="image/png" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+          <img class="contacts__image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png" width="320" height="362" alt="Карта проезда к офису компании Кэт Энерджи">
+        </picture>
       </div>
+      <iframe class="contacts__map-online" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625719817!2d30.32047247737302!3d59.938719162093584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1725632349929!5m2!1sru!2sru" width="280" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Офис компании по адресу улица Большая конюшенная, дом 19/8, Санкт-Петербург">
+      </iframe>
     </section>
   </main>
   <footer class="body__footer footer">

@@ -1,11 +1,30 @@
 .button-burger {
+  &:hover &:focus &:focus-visible {
+    opacity: 0.6;
+  }
+}
+
+.button-burger--opened {
   width: 24px;
   height: 24px;
+  background-image: url("../../icons/stack.svg#close");
+  background-size: 18px 18px;
   background-color: var(--color-third, #000080);
-  background-image: url("../../icons/stack.svg#burger");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.button-burger--closed {
+  width: 24px;
+  height: 24px;
+  background-image: url("../../icons/stack.svg#burger");
   background-size: 24px 24px;
+  background-color: var(--color-third, #000080);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   border: none;
   padding: 0;
   margin: 0;

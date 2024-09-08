@@ -19,6 +19,7 @@
 }
 
 .option-item__link {
+  width: 100%;
   font-size: 16px;
   line-height: 1;
   text-decoration: none;
@@ -59,7 +60,7 @@
       content: "";
       display: block;
       position: relative;
-      width: 240px;
+      width: 100%;
       height: 1px;
       background-color: #d9d9d9;
       top: 23px;
@@ -85,6 +86,8 @@
   }
 
   .option-item__title {
+    font-size: 36px;
+    line-height: 1;
     margin: 10px 0 12px;
   }
 

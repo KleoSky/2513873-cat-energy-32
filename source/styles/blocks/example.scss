@@ -1,7 +1,6 @@
 .example__wrapper {
-  min-width: 280px;
   margin: 0 auto;
-  padding: 25px 20px 40px;
+  padding: 25px 6.25% 40px;
 }
 
 .example__title {
@@ -146,7 +145,7 @@
 
 @media (min-width: 768px) {
   .example__wrapper {
-    padding: 0 30px 101px;
+    padding: 0 3.91% 101px;
   }
 
   .example__title {
@@ -224,7 +223,7 @@
 
 @media (min-width: 1440px) {
   .example__wrapper {
-    padding: 0 110px 75px;
+    padding: 0 7.63% 75px;
     display: grid;
     grid-template-columns: 1fr 560px;
     grid-template-rows: repeat(3, min-content);

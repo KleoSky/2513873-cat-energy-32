@@ -20,12 +20,48 @@
 
 .main__contacts {
   background-color: var(--bg-secondary, #000080);
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 57px;
+    height: 53px;
+    background-image: url("../../images/map-pin@1x.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 57px 53px;
+    bottom: 38%;
+    left: 41%;
+    z-index: 2;
+  }
+}
+
+.main__contacts iframe {
+  position: relative;
+  width: 100%;
+  border: none;
+  display: block;
+  margin-top: -362px;
+  z-index: 1;
 }
 
 @media (min-width: 768px) {
   .main__example {
-    grid-template-columns: 30px 1fr 30px;
     background-image: linear-gradient(to bottom, #ffffff 57%, #eaeaea 57%);
+  }
+
+  .main__contacts {
+    &::after {
+      bottom: 32%;
+      left: 46.5%;
+    }
+  }
+
+  .main__contacts iframe {
+    height: 400px;
+    margin-top: -400px;
   }
 }
 
@@ -60,5 +96,17 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 400px);
+
+    &::after {
+      bottom: 48%;
+      left: 48%;
+    }
+  }
+
+  .main__contacts iframe {
+    height: 400px;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    margin: 0;
   }
 }
