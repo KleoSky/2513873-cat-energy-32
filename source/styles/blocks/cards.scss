@@ -1,6 +1,5 @@
 .cards__wrapper {
   margin: 0 auto;
-  padding: 0 6.25%;
 }
 
 .cards__title {
@@ -9,6 +8,9 @@
   line-height: 1;
   font-weight: 400;
   color: var(--color-second, #fa5072);
+  margin: 0;
+  padding: 21px 0 41px 6.25%;
+  box-sizing: border-box;
 }
 
 .cards__list {
@@ -17,15 +19,22 @@
   list-style: none;
 }
 
-@media (min-width: 768px) and (max-width: 769px) {
-  .cards-list {
-    width: 709px;
+@media (max-width: 767px) {
+  .cards__title {
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #ebebeb;
   }
 }
 
+// @media (min-width: 768px) and (max-width: 769px) {
+//   .cards-list {
+//     width: 709px;
+//   }
+// }
+
 @media (min-width: 768px) {
   .cards__wrapper {
-    padding: 0 3.91%;
+    padding: 0 3.9%;
   }
 
   .cards__list {
@@ -53,7 +62,11 @@
 
 @media (min-width: 1440px) {
   .cards__wrapper {
-    padding: 0 7.1%;
+    padding: 0 7.63%;
+  }
+
+  .cards__title {
+    margin-bottom: 43px;
   }
 
   .cards__list {

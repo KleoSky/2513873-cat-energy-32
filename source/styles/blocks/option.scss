@@ -213,8 +213,12 @@
   }
 }
 
-// @media (min-width: 1650px) {
-//   .option-item {
-//     width: 39.6%;
-//   }
-// }
+@media (min-width: 1920px) {
+  .option__list {
+    justify-content: center;
+  }
+
+  .option__item {
+    max-width: 760px;
+  }
+}

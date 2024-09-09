@@ -6,12 +6,26 @@
 }
 
 .subscribe__title {
+  position: relative;
   font-family: var(--font-second, inherit);
   font-size: 24px;
   line-height: 1;
   font-weight: 400;
   color: var(--color-second, #fa8072);
   margin: 10px 0 20px;
+  width: fit-content;
+  background-color: var(--bg-primary, #000080);
+  box-shadow: 40px 0 0 var(--bg-primary, #000080);
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 2px;
+    background-color: var(--bg-accent, #000080);
+    top: 50%;
+    z-index: -1;
+  }
 }
 
 .subscribe__description {
@@ -36,6 +50,20 @@
   .subscribe__title {
     font-size: 32px;
     margin: 21px 0 42px;
+
+    &::before {
+      left: -100px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 32px;
+      background-color: var(--bg-primary, #000080);
+      z-index: -1;
+      right: 200px;
+    }
   }
 
   .subscribe__description {

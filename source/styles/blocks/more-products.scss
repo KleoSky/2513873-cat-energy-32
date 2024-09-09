@@ -22,7 +22,7 @@
 }
 
 .more-products__link {
-  min-width: 250px;
+  width: 250px;
   text-align: center;
   text-decoration: none;
   color: var(--color-base, #fa8072);
@@ -43,11 +43,18 @@
     width: 250px;
     line-height: 1.13;
     text-align: center;
+    margin: 0;
   }
 
   .more-products__link {
-    width: 169px;
+    width: 97.85%;
     box-sizing: border-box;
     align-self: center;
+  }
+}
+
+@media (min-width: 1440px) {
+  .more-products__link {
+    width: 98.4%;
   }
 }

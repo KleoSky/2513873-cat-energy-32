@@ -2,6 +2,8 @@
   border-bottom: 1px solid #cdcdcd;
   display: flex;
   flex-direction: column;
+  padding-bottom: 19px;
+  box-sizing: border-box;
 }
 
 .subproducts-list__item:first-child {
@@ -14,6 +16,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: min-content 68px;
     padding: 26px 5.36% 28px;
+    border: 1px solid #cdcdcd;
   }
 }
 

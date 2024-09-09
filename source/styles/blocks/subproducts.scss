@@ -4,19 +4,33 @@
 }
 
 .subproducts__title {
+  position: relative;
   font-family: var(--font-second, inherit);
   font-size: 24px;
   line-height: 1;
   font-weight: 400;
   color: var(--color-second, #fa8072);
   margin: 25px 0 36px;
+  width: fit-content;
+  background: var(--bg-primary, #000080);
+  box-shadow: -40px 0 0 var(--bg-primary, #000080), 40px 0 0 var(--bg-primary, #000080);
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 2px;
+    top: 50%;
+    z-index: -1;
+    background: var(--bg-accent, #000080);
+    box-shadow: 100vw 0 0 var(--bg-accent, #000080);
+  }
 }
 
 .subproducts__list {
   margin: 0;
   margin-bottom: 35px;
   padding: 0;
-  padding-bottom: 19px;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -53,7 +67,7 @@
 @media (min-width: 768px) {
   .subproducts__wrapper {
     margin: 0;
-    padding: 41px 3.91% 0;
+    padding: 41px 3.9% 0;
   }
 
   .subproducts__title {
@@ -68,6 +82,21 @@
 }
 
 @media (min-width: 768px) and (max-width: 1439px) {
+  .subproducts__title {
+    padding-left: 40px;
+    box-shadow: 0 0 0 var(--bg-primary, #000080), 40px 0 0 var(--bg-primary, #000080);
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      height: 2px;
+      top: 50%;
+      right: 100%;
+      z-index: -1;
+    }
+  }
+
   .subproducts__stock {
     background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 50%), url("../../images/stock-tablet@1x.jpg");
     background-size: contain;
@@ -107,6 +136,11 @@
     padding: 0;
     padding-top: 25px;
     box-sizing: border-box;
+
+    &::before {
+      top: 68%;
+      right: 100%;
+    }
   }
 
   .subproducts__list {

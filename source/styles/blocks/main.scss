@@ -32,7 +32,7 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 57px 53px;
-    bottom: 40%;
+    bottom: 38%;
     left: 41%;
     z-index: 2;
   }
@@ -54,8 +54,12 @@
 
   .main__contacts {
     &::after {
-      bottom: 32%;
-      left: 46.5%;
+      width: 113px;
+      height: 106px;
+      background-image: url("../../images/map-pin-tablet@1x.png");
+      background-size: 113px 106px;
+      bottom: 30%;
+      left: 43%;
     }
   }
 
@@ -98,8 +102,8 @@
     grid-template-rows: repeat(1, 400px);
 
     &::after {
-      bottom: 48%;
-      left: 48%;
+      bottom: 46%;
+      left: 46%;
     }
   }
 
