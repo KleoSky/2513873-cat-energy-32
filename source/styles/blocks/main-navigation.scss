@@ -16,6 +16,16 @@
   text-transform: uppercase;
   text-decoration: none;
   color: var(--color-second, #fa8072);
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (max-width: 767px) {

@@ -14,7 +14,14 @@
   margin-bottom: 16px;
   padding: 13px;
   box-sizing: border-box;
-  border: 1px solid #cdcdcd;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:invalid {
+    border: 2px solid #ff8282;
+  }
 }
 
 .subscribe-form__button {
@@ -37,5 +44,12 @@
 
   .subscribe-form__button {
     width: 256px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .subscribe-form {
+    position: relative;
+    left: 4%;
   }
 }

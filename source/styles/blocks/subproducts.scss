@@ -22,7 +22,7 @@
     height: 2px;
     top: 50%;
     z-index: -1;
-    background: var(--bg-accent, #000080);
+    background-color: var(--bg-accent, #000080);
     box-shadow: 100vw 0 0 var(--bg-accent, #000080);
   }
 }
@@ -175,7 +175,7 @@
 
 @media (min-width: 1920px) {
   .subproducts__title {
-    text-align: center;
+    left: 50%;
   }
 
   .subproducts__list-wrapper {
@@ -186,7 +186,7 @@
   }
 
   .subproducts__list {
-    justify-self: center;
+    justify-self: flex-end;
   }
 
   .subproducts__stock {
