@@ -8,6 +8,7 @@
   background-position: 50% 0;
   background-size: contain, 320px 302px, contain;
   color: var(--color-third, #fa8072);
+  margin-top: -5px;
 }
 
 .main__details {
@@ -16,10 +17,10 @@
 
 .main__example {
   background-color: var(--bg-tertiary, #eaeaea);
+  margin-bottom: 6px;
 }
 
 .main__contacts {
-  background-color: var(--bg-secondary, #000080);
   position: relative;
 
   &::after {
@@ -49,7 +50,7 @@
 
 @media (min-width: 768px) {
   .main__example {
-    background-image: linear-gradient(to bottom, #ffffff 57%, #eaeaea 57%);
+    background-image: linear-gradient(to bottom, #ffffff 55.5%, #eaeaea 55.5%);
   }
 
   .main__contacts {
@@ -76,7 +77,15 @@
     background-color: var(--bg-primary, #ffffff);
     background-image: none;
     color: var(--color-second, #fa8072);
-    margin: 0 auto;
+    margin: 0 auto -5px;
+  }
+
+  .main__details {
+    margin-bottom: 55px;
+  }
+
+  .main__example {
+    margin-bottom: 30px;
   }
 }
 

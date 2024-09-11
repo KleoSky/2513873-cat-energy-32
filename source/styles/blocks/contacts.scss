@@ -1,7 +1,9 @@
 .contacts__wrapper {
   margin: 0 auto;
-  padding: 0 20px;
+  margin-bottom: 10px;
+  padding: 15px 6.25%;
   display: flex;
+  gap: 16px;
   justify-content: space-between;
   align-items: center;
 }
@@ -13,6 +15,7 @@
   font-weight: 400;
   text-transform: uppercase;
   color: #111111;
+  margin: 0;
 }
 
 .contacts__address {
@@ -33,7 +36,7 @@
 @media (min-width: 768px) {
   .contacts__wrapper {
     margin: 0 auto;
-    padding: 60px 100px;
+    padding: 30px 70px 60px;
   }
 
   .contacts__title {

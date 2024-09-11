@@ -1,5 +1,5 @@
 .option-item__description {
-  margin: 23px 0;
+  margin: 30px 0 22px;
 }
 
 .option-item__title,
@@ -23,10 +23,10 @@
   font-size: 16px;
   line-height: 1;
   text-decoration: none;
-  padding-top: 15px;
+  padding-top: 19px;
   padding-bottom: 18px;
   display: flex;
-  gap: 15px;
+  gap: 17px;
   align-items: center;
 
   &::after {
@@ -88,15 +88,20 @@
   .option-item__title {
     font-size: 36px;
     line-height: 1;
-    margin: 10px 0 12px;
+    margin: 0 0 8px;
   }
 
+  // .option-item__title--pro {
+  //   margin-top: 22px;
+  // }
+
   .option-item__description {
-    margin: 12px 0;
+    margin: 17px 0;
   }
 
   .option-item__link {
-    margin-top: 36px;
+    margin-top: 16px;
+    padding: 20px 0;
   }
 }
 
