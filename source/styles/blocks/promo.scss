@@ -81,7 +81,7 @@
     position: relative;
     display: grid;
     grid-template-columns: 80px 1fr 163px 431px;
-    grid-template-rows: min-content min-content 94px 160px;
+    grid-template-rows: min-content min-content 94px 180px;
 
     &::before {
       content: "";
@@ -92,11 +92,11 @@
       background-repeat: no-repeat;
       background-size: auto 694px;
       background-color: #3b7d1d;
-      background-position: 5% 0;
+      background-position: 0 0;
       inset: 0;
       left: 720px;
       z-index: 0;
-      top: -149px;
+      top: -144px;
     }
   }
 
@@ -113,6 +113,7 @@
     line-height: 1;
     text-align: left;
     grid-row: 2 / 3;
+    padding: 0;
   }
 
   .promo__picture {
@@ -120,17 +121,19 @@
     position: relative;
     margin: 0;
     z-index: 5;
-    bottom: 290px;
-    left: 367px;
+    bottom: 279px;
+    left: 368px;
     box-sizing: border-box;
     grid-column: 2 / 5;
   }
 
   .promo__link {
     margin: 0;
-    margin-top: 29px;
+    margin-top: 35px;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
   }
 }

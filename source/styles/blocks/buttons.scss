@@ -42,3 +42,9 @@
     padding-bottom: 14px;
   }
 }
+
+@media (min-width: 1440px) {
+  .button--promo {
+    padding: 0;
+  }
+}
