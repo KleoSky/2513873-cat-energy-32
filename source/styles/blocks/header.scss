@@ -7,18 +7,28 @@
 
 @media (max-width: 767px) {
   .header__logo-wrapper {
-    padding-top: 8px;
-    padding-bottom: 15px;
+    padding-top: 12px;
+    padding-bottom: 0;
   }
 
   .header__logo {
     margin-top: 5px;
     margin-right: 56px;
+    padding-bottom: 12px;
   }
 
   .header__logo-title {
     margin-top: 5px;
     margin-right: 65px;
+    padding-bottom: 12px;
+  }
+
+  .header__logo--catalog {
+    margin-top: 0;
+  }
+
+  .header__logo-title--catalog {
+    margin-right: 66px;
   }
 }
 
@@ -29,7 +39,6 @@
 
   .header__logo-wrapper {
     justify-content: flex-start;
-    margin-left: -6px;
   }
 }
 

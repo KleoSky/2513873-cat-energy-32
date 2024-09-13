@@ -1,6 +1,6 @@
 .example__wrapper {
   margin: 0 auto;
-  padding: 25px 6.25% 40px;
+  padding: 24px 6.25% 35px;
 }
 
 .example__title {
@@ -235,7 +235,7 @@
 
 @media (min-width: 1440px) {
   .example__wrapper {
-    padding: 0 7.63% 75px;
+    padding: 0 7.63% 24px;
     display: grid;
     grid-template-columns: 1fr 560px;
     grid-template-rows: repeat(3, min-content);
@@ -250,6 +250,7 @@
 
   .example__title {
     margin-top: 0;
+    margin-bottom: 76px;
   }
 
   .example__description {
@@ -283,6 +284,7 @@
     justify-content: space-between;
     grid-column: 1 / -1;
     justify-self: flex-start;
+    margin-bottom: 51px;
   }
 
   .example__expenses {
@@ -299,5 +301,10 @@
     position: relative;
     grid-column: 2 / 3;
     grid-row: 1 / -1;
+    margin: 0;
+  }
+
+  .example__image-wrapper {
+    padding-left: 0;
   }
 }

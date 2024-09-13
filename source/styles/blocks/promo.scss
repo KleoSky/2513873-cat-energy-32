@@ -22,13 +22,14 @@
 
 .promo__picture {
   margin-top: 0;
+  margin-bottom: 23px;
 }
 
 .promo__link {
   display: block;
   width: 100%;
   text-decoration: none;
-  margin: 0 auto 20px;
+  margin: -23px auto 20px;
 }
 
 @media (min-width: 768px) {
@@ -81,7 +82,7 @@
     position: relative;
     display: grid;
     grid-template-columns: 80px 1fr 163px 431px;
-    grid-template-rows: min-content min-content 94px 180px;
+    grid-template-rows: min-content min-content 89px 185px;
 
     &::before {
       content: "";

@@ -1,3 +1,7 @@
+.subscribe-form {
+  margin-top: 12px;
+}
+
 .subscribe-form__label {
   display: flex;
   justify-content: center;
@@ -11,8 +15,8 @@
   line-height: 1.48;
   color: inherit;
   text-transform: uppercase;
-  margin-bottom: 16px;
-  padding: 13px;
+  margin-bottom: 22px;
+  padding: 11px;
   box-sizing: border-box;
 
   &:hover {

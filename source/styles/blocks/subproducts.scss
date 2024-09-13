@@ -43,8 +43,8 @@
   background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 50%), url("../../images/stock-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  padding-top: 58px;
-  padding-bottom: 43px;
+  padding-top: 56px;
+  padding-bottom: 42px;
   color: var(--color-third, #fa8072);
   display: flex;
   flex-direction: column;
@@ -59,7 +59,7 @@
     background-image: url("../../images/icon-gift.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-size: 60px 60px;
+    background-size: 80px 80px;
     margin-bottom: 48px;
   }
 }
@@ -73,7 +73,8 @@
   .subproducts__title {
     font-size: 32px;
     margin: 0;
-    margin-bottom: 80px;
+    margin-top: -22px;
+    margin-bottom: 81px;
   }
 
   .subproducts__list {
@@ -103,7 +104,7 @@
     display: grid;
     grid-template-columns: 1fr 286px;
     grid-template-rows: repeat(1, min-content);
-    padding: 57px 0 60px 77px;
+    padding: 57px 0 60px 85px;
 
     &::before {
       margin: 0;
@@ -145,7 +146,7 @@
 
   .subproducts__list {
     display: grid;
-    grid-template-columns: 250px auto max-content min-content;
+    grid-template-columns: 284px auto max-content min-content;
     grid-template-rows: repeat(auto-fit, minmax(20px, 1fr));
     width: 896px;
     column-gap: 4.46%;
@@ -169,6 +170,8 @@
 
     &::before {
       margin: 0;
+      margin-top: 11px;
+      background-size: 80px 83px;
     }
   }
 }

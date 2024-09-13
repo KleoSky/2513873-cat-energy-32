@@ -13,8 +13,8 @@
 }
 
 .option__item {
-  margin: 0 0 23px;
-  padding: 30px 20px 0;
+  margin: 0 0 22px;
+  padding: 28px 20px 3px;
   background-color: var(--bg-secondary, #444444);
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -78,8 +78,8 @@
       background-color: var(--bg-accent, #000080);
       border-radius: 50%;
       inset: 0;
-      left: 20px;
-      top: 24px;
+      left: 22px;
+      top: 22px;
     }
 
     &::after {
@@ -88,8 +88,8 @@
       height: 28px;
       inset: 0;
       background-size: 67px 28px;
-      left: 11px;
-      top: 35px;
+      left: 12px;
+      top: 33px;
     }
   }
 }
@@ -201,7 +201,7 @@
   }
 
   .option__list {
-    margin-bottom: 55px;
+    margin-bottom: 71px;
     flex-direction: row;
     column-gap: 6.6%;
   }
