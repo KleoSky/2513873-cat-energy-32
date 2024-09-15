@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <title>CatEnergy. Функциональное питание для котов.</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="fonts/Lato-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Oswald-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
@@ -56,6 +58,9 @@
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
           <div class="promo__picture">
             <picture>
+              <source media="(min-width: 1440px)" width="552" height="499" type="image/webp" srcset="images/index-hero-desktop@1x.webp 1x, images/index-hero-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" width="709" height="609" type="image/webp" srcset="images/index-hero-tablet@1x.webp 1x, images/index-hero-tablet@2x.webp 2x">
+              <source width="280" height="270" type="image/webp" srcset="images/index-hero-mobile@1x.webp 1x, images/index-hero-mobile@2x.webp 2x">
               <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/index-hero-desktop@1x.png 1x, images/index-hero-desktop@2x.png 2x">
               <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/index-hero-tablet@1x.png 1x, images/index-hero-tablet@2x.png 2x">
               <img src="images/index-hero-mobile@1x.png" srcset="images/index-hero-mobile@2x.png 2x" width="280" height="270" alt="Корм для котов со вкусом курицы">
@@ -125,11 +130,17 @@
           <div class="example__slider-wrapper">
             <div class="example__image-wrapper">
               <picture>
+                <source media="(min-width: 1440px)" width="560" height="512" type="image/webp" srcset="images/catfat-desktop@1x.webp 1x, images/catfat-desktop@2x.webp 2x">
+                <source media="(min-width: 768px)" width="560" height="512" type="image/webp" srcset="images/catfat-tablet@1x.webp 1x, images/catfat-tablet@2x.webp 2x">
+                <source width="280" height="256" type="image/webp" srcset="images/catfat-mobile@1x.webp 1x, images/catfat-mobile@2x.webp 2x">
                 <source media="(min-width: 1440px)" width="560" height="512" type="image/png" srcset="images/catfat-desktop@1x.png 1x, images/catfat-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/catfat-tablet@1x.png 1x, images/catfat-tablet@2x.png 2x">
                 <img class="example__image-fat" src="images/catfat-mobile@1x.png" srcset="images/catfat-mobile@2x.png" width="280" height="256" alt="Вид кота до употребления специального питания">
               </picture>
               <picture>
+                <source media="(min-width: 1440px)" width="560" height="512" type="image/webp" srcset="images/catthin-desctop@1x.webp, images/catthin-desctop@2x.webp 2x">
+                <source media="(min-width: 768px)" width="560" height="512" type="image/webp" srcset="images/catthin-tablet@1x.webp 1x, images/catthin-tablet@2x.webp 2x">
+                <source width="280" height="256" type="image/webp" srcset="images/catthin-mobile@1x.webp 1x, images/catthin-mobile@2x.webp 2x">
                 <source media="(min-width: 1440px)" width="560" height="512" type="image/png" srcset="images/catthin-desctop@1x.png 1x, images/catthin-desctop@2x.png 2x">
                 <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/catthin-tablet@1x.png 1x, images/catthin-tablet@2x.png 2x">
                 <img class="example__image-thin" src="images/catthin-mobile@1x.png" srcset="images/catthin-mobile@2x.png" width="280" height="256" alt="Вид кота после употребления специального питания">
@@ -150,6 +161,9 @@
         </div>
         <div class="contacts__map-wrapper">
           <picture>
+            <source media="(min-width: 1440px)" width="1440" height="400" type="image/webp" srcset="images/map-desktop@1x.webp 1x, images/map-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" width="768" height="400" type="image/webp" srcset="images/map-tablet@1x.webp 1x, images/map-tablet@2x.webp 2x">
+            <source width="320" height="362" type="image/webp" srcset="images/map-mobile@1x.webp 1x, images/map-mobile@2x.webp 2x">
             <source media="(min-width: 1440px)" width="1440" height="400" type="image/png" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
             <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
             <img class="contacts__image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png" width="320" height="362" alt="Карта проезда к офису компании Кэт Энерджи">
@@ -160,7 +174,7 @@
       </section>
     </main>
     <footer class="body__footer footer">
-      <div class="footer__wrapper">
+      <div class="footer__wrapper footer__wrapper--tablet">
         <a class="footer__logo-title logo" href="#">
           <img class="logo__description logo__description--footer" src="images/logo-text-mobile.svg" width="128" height="24" alt="Надпись Cat Energy">
         </a>

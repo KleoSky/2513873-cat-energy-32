@@ -21,11 +21,24 @@
   align-self: center;
 }
 
-.more-products__link {
+.more-products__link,
+.more-products__title-link {
   text-align: center;
   text-decoration: none;
   color: var(--color-base, #fa8072);
   margin-top: 13px;
+}
+
+.more-products__title-link {
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: 768px) {

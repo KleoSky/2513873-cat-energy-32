@@ -42,7 +42,8 @@
   }
 }
 
-.option-item__link:hover::after {
+.option-item__link:hover::after,
+.option-item__link:focus::after {
   transform: scaleX(1.35);
 }
 
