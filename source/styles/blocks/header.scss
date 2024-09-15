@@ -6,8 +6,13 @@
 
 
 @media (max-width: 767px) {
+  .header__logo-wrapper--menu-opened {
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+
   .header__logo-wrapper {
-    padding-top: 12px;
+    padding-top: 11px;
     padding-bottom: 3px;
   }
 

@@ -28,19 +28,19 @@
 @media (min-width: 768px) {
   .body__header {
     margin: 25px 0 54px;
-    justify-content: space-between;
     padding: 0 3.91%;
+    gap: 13%;
   }
 
   .body__header--catalog {
     margin-bottom: 48px;
+    gap: 12.5%;
   }
 }
 
 @media (min-width: 1440px) {
   .body__header {
-    gap: 0;
-    justify-content: space-between;
+    gap: 43.7%;
     margin: 55px 0 58px;
     padding: 0 7.1%;
   }

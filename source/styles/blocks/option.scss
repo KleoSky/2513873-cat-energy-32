@@ -8,7 +8,7 @@
   padding: 0;
   list-style: none;
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   justify-content: center;
 }
 
@@ -142,7 +142,7 @@
       grid-column: 2 / 3;
       grid-row: 1 / -1;
       left: 40%;
-      top: 5px;
+      top: 5.4%;
     }
   }
 
@@ -200,7 +200,6 @@
   }
 
   .option__list {
-    margin-bottom: 71px;
     flex-direction: row;
     column-gap: 6.6%;
   }
@@ -208,6 +207,7 @@
   .option__item {
     width: 46.7%;
     margin: 0;
+    margin-bottom: 41px;
     padding: 41px 52px 47px;
     display: flex;
     flex-direction: column;

@@ -54,7 +54,7 @@
     counter-increment: list;
     min-width: 230px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 118px 1fr;
     grid-template-rows: repeat(3, min-content);
     margin-bottom: 37px;
     gap: 0;
@@ -94,7 +94,7 @@
   }
 
   .details-list__item--time {
-    width: 249px;
+    min-width: 249px;
   }
 
   .details-list__text {
@@ -120,12 +120,13 @@
 
 @media (min-width: 1440px) {
   .details-list {
-    column-gap: 5.35%;
+    column-gap: 5.21%;
     margin-bottom: 69px;
   }
 
   .details-list--text {
     margin-top: 4px;
+    max-width: 249px;
   }
 
   .details-list__item {
@@ -154,5 +155,6 @@
 
   .details-list__text--time {
     margin-left: 5px;
+    max-width: 249px;
   }
 }
