@@ -112,6 +112,7 @@
   }
 
   .option__item {
+    width: 100%;
     padding: 77px 44% 33px 7.35%;
     display: grid;
     grid-template-columns: 100% min-content;
@@ -142,7 +143,7 @@
       grid-column: 2 / 3;
       grid-row: 1 / -1;
       left: 40%;
-      top: 5.4%;
+      top: 1.4%;
     }
   }
 

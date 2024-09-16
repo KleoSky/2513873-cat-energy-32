@@ -33,9 +33,8 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 57px 53px;
-    bottom: 37%;
-    left: 42%;
-    transform: translate(-58%, -63%);
+    top: 52%;
+    right: 41%;
     z-index: 2;
   }
 }
@@ -58,8 +57,8 @@
       height: 106px;
       background-image: image-set("../images/map-pin-tablet@2x.webp" 2x type("image/webp"), "../images/map-pin-tablet@1x.webp" 1x type("image/webp"), "../images/map-pin-tablet@2x.png" 2x type("image/png"), "../images/map-pin-tablet@1x.png" 1x type("image/png"));
       background-size: 113px 106px;
-      bottom: 26%;
-      left: 43.2%;
+      top: 55.5%;
+      right: 42%;
     }
   }
 
@@ -75,7 +74,7 @@
     background-color: var(--bg-primary, #ffffff);
     background-image: none;
     color: var(--color-second, #fa8072);
-    margin: 0 auto -5px;
+    margin: 0 auto;
   }
 
   .main__details {
@@ -107,14 +106,13 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: auto 565px 90px 565px auto;
-    grid-template-rows: 95px auto auto;
+    grid-template-rows: 95px auto 95px;
     min-width: 100%;
     min-height: 400px;
 
     &::after {
-      bottom: 24%;
-      left: 67.5%;
-      transform: translate(-56.5%, -63%);
+      top: 32.5%;
+      right: 29%;
     }
   }
 

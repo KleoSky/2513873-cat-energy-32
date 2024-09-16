@@ -40,9 +40,13 @@
 
 @media (min-width: 1440px) {
   .body__header {
-    gap: 43.7%;
+    gap: 46%;
     margin: 55px 0 58px;
     padding: 0 7.1%;
+  }
+
+  .body__header--catalog {
+    gap: 45.5%;
   }
 }
 

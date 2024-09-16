@@ -35,6 +35,7 @@
 
 @media (min-width: 768px) {
   .cards-list__item {
+    max-width: 324px;
     display: flex;
     flex-direction: column;
     padding: 20px 5.2% 40px;

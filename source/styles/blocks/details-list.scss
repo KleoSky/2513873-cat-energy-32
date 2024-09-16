@@ -47,54 +47,59 @@
 @media (min-width: 768px) {
   .details-list {
     counter-reset: list;
-    column-gap: 137px;
+    column-gap: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .details-list__item {
+    position: relative;
     counter-increment: list;
     min-width: 230px;
-    display: grid;
-    grid-template-columns: 118px 1fr;
-    grid-template-rows: repeat(3, min-content);
-    margin-bottom: 37px;
-    gap: 0;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 53px;
+    padding: 40px 0;
 
     &::before {
       width: 80px;
       height: 80px;
-      margin-top: 40px;
+      margin-bottom: 32px;
       grid-column: 1 / 2;
       grid-row: 1 / 2;
     }
 
     &::after {
       content: counter(list) " ";
-      position: relative;
       font-family: var(--font-second, inherit);
       font-size: 280px;
       line-height: 1;
       color: var(--bg-secondary, #000080);
-      grid-column: 2 / 3;
-      grid-row: 1 / -1;
+      position: absolute;
       right: 0;
+      top: 0;
+      width: 134px;
+      display: flex;
+      justify-content: center;
+      z-index: -1;
     }
   }
 
   .details-list__item--leaf {
-    margin-right: 15px;
-    width: 230px;
+    margin-right: 9px;
+    max-width: 238px;
   }
 
   .details-list__item--powder {
-    width: 246px;
+    max-width: 248px;
   }
 
   .details-list__item--eat {
-    width: 247px;
+    max-width: 247px;
   }
 
   .details-list__item--time {
-    min-width: 249px;
+    max-width: 249px;
   }
 
   .details-list__text {
@@ -120,8 +125,9 @@
 
 @media (min-width: 1440px) {
   .details-list {
-    column-gap: 5.21%;
-    margin-bottom: 69px;
+    gap: 2% 5.21%;
+    margin-bottom: 45px;
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .details-list--text {
@@ -130,27 +136,43 @@
   }
 
   .details-list__item {
-    margin-bottom: 0;
+    margin-bottom: 36px;
+
+    &::after {
+      right: -8px;
+    }
   }
 
   .details-list__item--leaf {
-    margin-right: 29px;
+    margin-right: 32px;
   }
 
   .details-list__item--powder {
-    margin-right: 14px;
+    margin-right: 32px;
+
+    &::after {
+      right: -15px;
+    }
   }
 
   .details-list__item--eat {
-    margin-right: 8px;
+    margin-right: 26px;
+
+    &::after {
+      right: -16px;
+    }
   }
 
-  .details-list__item--time::before {
-    margin-left: 5px;
-  }
+  .details-list__item--time {
+    margin-right: 2px;
 
-  .details-list__item::after {
-    right: -2px;
+    &::before {
+      margin-left: 5px;
+    }
+
+    &::after {
+      right: -6px;
+    }
   }
 
   .details-list__text--time {
