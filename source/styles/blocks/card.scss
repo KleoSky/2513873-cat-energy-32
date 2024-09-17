@@ -235,6 +235,7 @@
 
   .card__description {
     min-width: 169px;
+    margin-bottom: 34px;
   }
 
   .card__definition {
@@ -251,13 +252,14 @@
 
   .card__definition--subproduct:first-child {
     margin: 0;
+    margin-right: 60px;
   }
 
   .card__button {
     min-width: 169px;
     align-self: center;
     margin: 0;
-    margin-top: 22px;
+    margin-top: auto;
   }
 
   .card__button--subproduct {
@@ -272,7 +274,6 @@
     font-size: 20px;
     margin: 0;
     align-self: center;
-    padding: 22px 0 28px;
   }
 
   .card__description--subproducts {
@@ -280,6 +281,6 @@
     display: grid;
     grid-template-columns: subgrid;
     padding: 0;
-    gap: 38%;
+    margin: 0;
   }
 }

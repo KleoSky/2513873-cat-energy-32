@@ -108,6 +108,12 @@
   }
 }
 
+@media (min-width: 960px) and (max-width: 1439px) {
+  .contacts__wrapper {
+    max-width: 600px;
+  }
+}
+
 @media (min-width: 1440px) {
   .contacts__wrapper {
     position: relative;

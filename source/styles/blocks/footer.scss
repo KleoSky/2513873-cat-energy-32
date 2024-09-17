@@ -29,12 +29,14 @@
 }
 
 .footer__developer-logo {
+  max-width: 280px;
   text-decoration: none;
   color: inherit;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px 0 40px;
+  margin: 20px auto 40px;
+  gap: 140px;
 }
 
 .footer__developer-logo:hover .developer-logo__image path,

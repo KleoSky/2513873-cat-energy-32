@@ -61,6 +61,7 @@
 @media (min-width: 1440px) {
   .cards__wrapper {
     padding: 0 7.63%;
+    margin-bottom: 44px;
   }
 
   .cards__title {
@@ -68,7 +69,7 @@
   }
 
   .cards__list {
-    gap: 77px 80px;
+    gap: 63px 80px;
     justify-content: flex-start;
   }
 }

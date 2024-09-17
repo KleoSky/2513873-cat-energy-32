@@ -240,6 +240,12 @@
   }
 }
 
+@media (min-width: 960px) and (max-width: 1439px) {
+  .example__wrapper {
+    max-width: 1050px;
+  }
+}
+
 @media (min-width: 1440px) {
   .example__wrapper {
     max-width: 1700px;

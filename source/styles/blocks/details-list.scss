@@ -119,19 +119,6 @@
   }
 }
 
-@media (min-width: 850px) and (max-width: 1140px) {
-  .details-list {
-    justify-content: center;
-    grid-template-columns: repeat(3, max-content);
-  }
-}
-
-@media (min-width: 940px) and (max-width: 1439px) {
-  .details-list {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
 @media (min-width: 1440px) {
   .details-list {
     gap: 37px 52px;
