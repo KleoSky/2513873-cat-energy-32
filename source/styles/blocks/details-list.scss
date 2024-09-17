@@ -44,27 +44,34 @@
   }
 }
 
+@media (min-width: 540px) and (max-width: 767px) {
+  .details-list__item {
+    width: 472px;
+    align-self: center;
+  }
+}
+
 @media (min-width: 768px) {
   .details-list {
     counter-reset: list;
-    column-gap: 60px;
+    gap: 37px 136px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, max-content);
   }
 
   .details-list__item {
     position: relative;
     counter-increment: list;
-    min-width: 230px;
-    display: block;
     margin-top: 0;
-    margin-bottom: 53px;
-    padding: 40px 0;
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-template-rows: 120px min-content;
+    gap: 20px 34px;
 
     &::before {
       width: 80px;
       height: 80px;
-      margin-bottom: 32px;
+      margin-top: 40px;
       grid-column: 1 / 2;
       grid-row: 1 / 2;
     }
@@ -75,19 +82,20 @@
       font-size: 280px;
       line-height: 1;
       color: var(--bg-secondary, #000080);
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 134px;
-      display: flex;
-      justify-content: center;
+      position: relative;
+      width: fit-content;
       z-index: -1;
+      grid-column: 2 / 3;
+      grid-row: 1 / -1;
     }
   }
 
   .details-list__item--leaf {
-    margin-right: 9px;
-    max-width: 238px;
+    max-width: 230px;
+  }
+
+  .details-list__item--leaf::after {
+    left: 4px;
   }
 
   .details-list__item--powder {
@@ -105,28 +113,28 @@
   .details-list__text {
     position: relative;
     grid-column: 1 / -1;
-    grid-row: 2 / 4;
+    grid-row: 2 / 3;
     z-index: 3;
-  }
-}
-
-@media (min-width: 540px) and (max-width: 767px) {
-  .details-list__item {
-    width: 472px;
-    align-self: center;
+    margin-top: 11px;
   }
 }
 
 @media (min-width: 850px) and (max-width: 1140px) {
   .details-list {
     justify-content: center;
+    grid-template-columns: repeat(3, max-content);
+  }
+}
+
+@media (min-width: 940px) and (max-width: 1439px) {
+  .details-list {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (min-width: 1440px) {
   .details-list {
-    gap: 2% 5.21%;
-    margin-bottom: 45px;
+    gap: 37px 52px;
     grid-template-columns: repeat(4, 1fr);
   }
 
@@ -144,27 +152,28 @@
   }
 
   .details-list__item--leaf {
-    margin-right: 32px;
+    margin-right: 0;
   }
 
   .details-list__item--powder {
-    margin-right: 32px;
+    margin-left: 6px;
 
     &::after {
-      right: -15px;
+      right: 0;
     }
   }
 
   .details-list__item--eat {
-    margin-right: 26px;
+    margin-left: 14px;
 
     &::after {
-      right: -16px;
+      right: 0;
     }
   }
 
   .details-list__item--time {
     margin-right: 2px;
+    margin-left: 15px;
 
     &::before {
       margin-left: 5px;

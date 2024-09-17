@@ -20,25 +20,6 @@
   margin-bottom: 6px;
 }
 
-.main__contacts {
-  position: relative;
-
-  &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 57px;
-    height: 53px;
-    background-image: image-set("../images/map-pin@2x.webp" 2x type("image/webp"), "../images/map-pin@1x.webp" 1x type("image/webp"), "../images/map-pin@2x.png" 2x type("image/png"), "../images/map-pin@1x.png" 1x type("image/png"));
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 57px 53px;
-    top: 52%;
-    right: 41%;
-    z-index: 2;
-  }
-}
-
 .main__contacts iframe {
   position: relative;
   width: 100%;
@@ -49,17 +30,6 @@
 @media (min-width: 768px) {
   .main__example {
     background-image: linear-gradient(to bottom, #ffffff 55.5%, #eaeaea 55.5%);
-  }
-
-  .main__contacts {
-    &::after {
-      width: 113px;
-      height: 106px;
-      background-image: image-set("../images/map-pin-tablet@2x.webp" 2x type("image/webp"), "../images/map-pin-tablet@1x.webp" 1x type("image/webp"), "../images/map-pin-tablet@2x.png" 2x type("image/png"), "../images/map-pin-tablet@1x.png" 1x type("image/png"));
-      background-size: 113px 106px;
-      top: 55.5%;
-      right: 42%;
-    }
   }
 
   .main__contacts iframe {
@@ -78,7 +48,7 @@
   }
 
   .main__details {
-    margin-bottom: 55px;
+    margin-bottom: 92px;
   }
 
   .main__example {
@@ -90,6 +60,26 @@
   .main__promo {
     background-image: none;
     background-color: #ffffff;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85) 50% 50%), image-set("../images/index-desktop@2x.webp" 2x type("image/webp"), "../images/index-desktop@1x.webp" 1x type("image/webp"), "../images/index-desktop@2x.jpg" 2x type("image/jpg"), "../images/index-desktop@1x.jpg" 1x type("image/jpg")), linear-gradient(270deg, #3f3e46, #404145);
+      background-repeat: no-repeat;
+      background-size: auto, 1040px  694px;
+      background-color: #68b738;
+      background-position: 0 100%;
+      height: 350%;
+      inset: 0;
+      top: -250%;
+      left: 50%;
+      z-index: 0;
+    }
+  }
+
+  .main__details {
+    margin-bottom: 33px;
   }
 
   .main__example {

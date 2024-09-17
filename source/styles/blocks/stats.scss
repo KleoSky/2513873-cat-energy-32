@@ -50,10 +50,12 @@
   }
 
   .stats__title--weight {
+    margin-left: 0;
     width: 114px;
   }
 
   .stats__title--time {
+    margin-left: 0;
     width: 142px;
   }
 
@@ -75,8 +77,8 @@
     width: 162px;
   }
 
-  .stats__description--time,
   .stats__title--time {
-    margin-right: 70px;
+    margin-right: 13px;
+    margin-left: 13px;
   }
 }

@@ -10,7 +10,7 @@
   line-height: 1;
   font-weight: 400;
   color: var(--color-second, #fa8072);
-  margin: 25px 0 36px;
+  margin: 25px 0 35px;
   width: fit-content;
   background: var(--bg-primary, #000080);
   box-shadow: -40px 0 0 var(--bg-primary, #000080), 40px 0 0 var(--bg-primary, #000080);
@@ -68,7 +68,7 @@
 @media (min-width: 768px) {
   .subproducts__wrapper {
     margin: 0;
-    padding: 41px 3.9% 0;
+    padding: 0 3.9%;
   }
 
   .subproducts__title {

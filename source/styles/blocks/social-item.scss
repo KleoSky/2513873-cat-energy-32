@@ -30,7 +30,7 @@
   --icon: url("../../images/icon-youtube.svg");
 }
 
-.social-item__link--twitter {
+.social-item__link--tg {
   mask-size: 18px 17px;
   --icon: url("../../images/icon-tg.svg");
 }
@@ -45,7 +45,7 @@
 }
 
 @media (min-width: 768px) {
-  .social-item__link--twitter {
+  .social-item__link--tg {
     mask-size: 24px 19px;
   }
 }

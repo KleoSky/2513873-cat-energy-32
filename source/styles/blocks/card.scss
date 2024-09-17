@@ -69,8 +69,7 @@
 }
 
 .card__button {
-  margin-top: 5px;
-  padding-top: 11px;
+  margin-top: 2px;
   grid-column: 1 / -1;
   grid-row: 3 / 4;
 }
@@ -104,10 +103,10 @@
   .card__title {
     max-width: 135px;
     margin: 0;
-    margin-top: 4px;
-    align-self: center;
+    justify-self: center;
     text-align: center;
-    flex-grow: 1;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
   }
 
   .card__link {
@@ -118,9 +117,9 @@
   .card__image-link {
     min-width: 200px;
     min-height: 210px;
-    order: -1;
     padding: 0;
-    align-self: center;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
 
     &:hover {
       opacity: 0.8;
@@ -136,6 +135,9 @@
     line-height: 1.25;
     min-width: 250px;
     margin: 0;
+    margin-bottom: 20px;
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
   }
 
   .card__description dd {
@@ -152,7 +154,9 @@
   .card__button {
     min-width: 250px;
     align-self: center;
-    margin-top: 16px;
+    grid-column: 1 / -1;
+    grid-row: 4 / 5;
+    margin-top: 0;
   }
 
   .card__subtitle {
@@ -167,13 +171,14 @@
     flex-direction: row;
     justify-content: flex-end;
     grid-row: 1 / 2;
+    margin: 0;
     padding: 0;
     padding-top: 8px;
-    gap: 16.5%;
+    gap: 53px;
   }
 
   .card__description--liters {
-    gap: 19%;
+    gap: 61px;
   }
 
   .card__definition--subproduct {
@@ -214,13 +219,14 @@
   .card__title {
     width: 140px;
     margin: 0;
-    margin-bottom: 10px;
-    align-self: center;
+    margin-bottom: 18px;
+    justify-self: center;
     text-align: center;
   }
 
   .card__image-link {
     width: 169px;
+    justify-content: flex-start;
   }
 
   .card__image--small {

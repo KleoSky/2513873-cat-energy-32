@@ -242,6 +242,7 @@
 
 @media (min-width: 1440px) {
   .example__wrapper {
+    max-width: 1700px;
     padding: 0 7.63% 24px;
     display: grid;
     grid-template-columns: 1fr 560px;
@@ -267,6 +268,7 @@
   .example__stats-wrapper {
     display: grid;
     grid-template-rows: repeat(2, min-content);
+    grid-template-columns: repeat(2, min-content);
     gap: 55px 42px;
     margin: 0;
   }
@@ -286,9 +288,11 @@
   }
 
   .example__stats--expenses {
+    max-width: 440px;
     flex-direction: row;
     justify-content: space-between;
     grid-column: 1 / -1;
+    grid-row: 2 / 3;
     justify-self: flex-start;
     margin-bottom: 51px;
   }
