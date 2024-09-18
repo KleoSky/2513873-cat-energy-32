@@ -239,8 +239,20 @@
   }
 
   .card__definition {
+    justify-content: flex-start;
     padding: 5px 0 7px;
-    gap: 40%;
+    gap: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card__definition dt {
+    grid-column: 1 / 2;
+  }
+
+  .card__definition dd {
+    grid-column: 2 / 3;
+    justify-self: flex-end;
   }
 
   .card__definition--subproduct {

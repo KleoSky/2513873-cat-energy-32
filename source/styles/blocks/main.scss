@@ -2,7 +2,7 @@
   font-family: var(--font-second, inherit);
   position: relative;
   text-align: center;
-  background-color: #3b7d1d;
+  background-color: #68b738;
   background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 63%, rgba(255, 255, 255, 1) 37%), image-set("../images/index-background-mobile@2x.webp" 2x type("image/webp"), "../images/index-background-mobile@1x.webp" 1x type("image/webp"), "../images/index-background-mobile@2x.jpg" 2x type("image/jpg"), "../images/index-background-mobile@1x.jpg" 1x type("image/jpg")), linear-gradient(to right, #4f4e54 50%, #424147 50%);
   background-repeat: no-repeat;
   background-position: 50% 0;
@@ -65,10 +65,10 @@
       content: "";
       display: block;
       position: absolute;
+      background-color: #68b738;
       background-image: linear-gradient(rgba(104, 183, 56, 0.85) 50% 50%), image-set("../images/index-desktop@2x.webp" 2x type("image/webp"), "../images/index-desktop@1x.webp" 1x type("image/webp"), "../images/index-desktop@2x.jpg" 2x type("image/jpg"), "../images/index-desktop@1x.jpg" 1x type("image/jpg")), linear-gradient(270deg, #3f3e46, #404145);
       background-repeat: no-repeat;
       background-size: auto, 1040px  694px;
-      background-color: #68b738;
       background-position: 0 100%;
       height: 350%;
       inset: 0;

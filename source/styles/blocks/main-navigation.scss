@@ -34,6 +34,14 @@
 }
 
 @media (max-width: 767px) {
+  .main-navigation__list {
+    width: 100%;
+    background-color: var(--bg-primary, #000080);
+    position: absolute;
+    top: 65px;
+    z-index: 1;
+  }
+
   .main-navigation {
     width: 100%;
   }

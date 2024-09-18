@@ -1,5 +1,10 @@
 const mainNav = document.querySelector('.main-navigation');
 const burger = document.querySelector('.button-burger');
+const body = document.querySelector('.body');
+
+body.classList.remove('nojs');
+mainNav.classList.remove('main-navigation--opened');
+mainNav.classList.add('main-navigation--closed');
 
 burger.addEventListener('click', ()=> {
   if (mainNav.classList.contains('main-navigation--closed')) {
