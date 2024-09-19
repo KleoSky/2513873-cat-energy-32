@@ -67,7 +67,7 @@
 
 @media (min-width: 768px) {
   .subproducts__wrapper {
-    margin: 0;
+    margin: 0 auto;
     padding: 0 3.9%;
   }
 
@@ -122,7 +122,6 @@
 
 @media (min-width: 1440px) {
   .subproducts__wrapper {
-    margin: 0 auto;
     padding: 0 7.63%;
   }
 
@@ -179,10 +178,6 @@
 }
 
 @media (min-width: 1920px) {
-  .subproducts__title {
-    left: 50%;
-  }
-
   .subproducts__list-wrapper {
     display: grid;
     grid-template-columns: 2fr 1fr;
