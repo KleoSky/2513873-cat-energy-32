@@ -15,6 +15,8 @@
 
 @media (min-width: 1440px) {
   .body__header {
+    position: relative;
+
     &::before {
       content: "";
       z-index: -1;
@@ -23,7 +25,7 @@
       width: 50%;
       height: 100%;
       position: absolute;
-      top: -165px;
+      top: 0;
       right: 0;
     }
   }
