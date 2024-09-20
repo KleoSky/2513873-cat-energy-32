@@ -48,16 +48,6 @@
   }
 }
 
-@media (min-width: 950px) and (max-width: 1439px) {
-  .cards__title {
-    text-align: center;
-  }
-
-  .cards__list {
-    justify-content: center;
-  }
-}
-
 @media (min-width: 1440px) {
   .cards__wrapper {
     padding: 0 7.63%;
