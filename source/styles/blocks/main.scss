@@ -20,6 +20,12 @@
   margin-bottom: 6px;
 }
 
+@media (max-width: 1439px) {
+  .main__contacts--catalog {
+    background-color: var(--bg-secondary, #000080);
+  }
+}
+
 .main__contacts iframe {
   position: relative;
   width: 100%;
