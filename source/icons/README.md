@@ -45,4 +45,3 @@
   mask-image: url("../icons/stack.svg#search");
 }
 ```
-

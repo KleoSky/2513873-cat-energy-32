@@ -7,4 +7,3 @@ _header.scss_
 .header__logo {}
 .header__nav {}
 ```
-
