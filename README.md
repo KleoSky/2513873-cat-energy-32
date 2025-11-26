@@ -43,3 +43,4 @@ _`.github`, `.editorconfig`, `.eslintrc`, `.gitattributes`, `.gitignore`, `.lint
 
 [check-image]: https://github.com/htmlacademy-adaptive/2513873-cat-energy-32/workflows/Project%20check/badge.svg?branch=master
 [check-url]: https://github.com/htmlacademy-adaptive/2513873-cat-energy-32/actions
+
